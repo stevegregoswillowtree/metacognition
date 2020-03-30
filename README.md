@@ -1,1 +1,2 @@
-# metacognition
+# Metacognition
+Metacognition is a WillowTree innovation project designed to grow technical ability for those looking to switch roles from engineering to another part of the business. This project is a conceptual example for how someone could build technical engineering skills and skills for an aspirational career simultaneously. The technical excellence of the project showcases growing talents in engineering, while the content of the application can be centered around the aspirational career. Think about what tools would help you in your aspirational career - could they be consolidated into an application?
