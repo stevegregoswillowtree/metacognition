@@ -1,4 +1,4 @@
-package com.stevegregos.metacognition.ui.dashboard
+package com.stevegregos.metacognition.ui.bestpractices
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -10,20 +10,20 @@ import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
 import com.stevegregos.metacognition.R
 
-class DashboardFragment : Fragment() {
+class BestPracticesFragment : Fragment() {
 
-    private lateinit var dashboardViewModel: DashboardViewModel
+    private lateinit var bestPracticesViewModel: BestPracticesViewModel
 
     override fun onCreateView(
             inflater: LayoutInflater,
             container: ViewGroup?,
             savedInstanceState: Bundle?
     ): View? {
-        dashboardViewModel =
-                ViewModelProviders.of(this).get(DashboardViewModel::class.java)
-        val root = inflater.inflate(R.layout.fragment_dashboard, container, false)
+        bestPracticesViewModel =
+                ViewModelProviders.of(this).get(BestPracticesViewModel::class.java)
+        val root = inflater.inflate(R.layout.fragment_best_practices, container, false)
         val textView: TextView = root.findViewById(R.id.text_dashboard)
-        dashboardViewModel.text.observe(viewLifecycleOwner, Observer {
+        bestPracticesViewModel.text.observe(viewLifecycleOwner, Observer {
             textView.text = it
         })
         return root

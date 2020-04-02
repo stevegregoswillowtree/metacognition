@@ -3,23 +3,23 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/navigation_home">
+    app:startDestination="@+id/navigation_best_practices">
 
     <fragment
-        android:id="@+id/navigation_home"
-        android:name="com.stevegregos.metacognition.ui.home.HomeFragment"
+        android:id="@+id/navigation_best_practices"
+        android:name="com.stevegregos.metacognition.ui.techniques.TechniquesFragment"
         android:label="@string/title_home"
-        tools:layout="@layout/fragment_home" />
+        tools:layout="@layout/fragment_techniques" />
 
     <fragment
-        android:id="@+id/navigation_dashboard"
-        android:name="com.stevegregos.metacognition.ui.dashboard.DashboardFragment"
+        android:id="@+id/navigation_techniques"
+        android:name="com.stevegregos.metacognition.ui.bestpractices.BestPracticesFragment"
         android:label="@string/title_dashboard"
-        tools:layout="@layout/fragment_dashboard" />
+        tools:layout="@layout/fragment_best_practices" />
 
     <fragment
-        android:id="@+id/navigation_notifications"
-        android:name="com.stevegregos.metacognition.ui.notifications.NotificationsFragment"
+        android:id="@+id/navigation_job_aids"
+        android:name="com.stevegregos.metacognition.ui.jobaids.JobAidsFragment"
         android:label="@string/title_notifications"
-        tools:layout="@layout/fragment_notifications" />
+        tools:layout="@layout/fragment_job_aids" />
 </navigation>

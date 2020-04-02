@@ -1,10 +1,10 @@
-package com.stevegregos.metacognition.ui.notifications
+package com.stevegregos.metacognition.ui.jobaids
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 
-class NotificationsViewModel : ViewModel() {
+class JobAidsViewModel : ViewModel() {
 
     private val _text = MutableLiveData<String>().apply {
         value = "This is notifications Fragment"

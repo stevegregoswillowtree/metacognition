@@ -1,4 +1,4 @@
-package com.stevegregos.metacognition.ui.home
+package com.stevegregos.metacognition.ui.jobaids
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -10,20 +10,20 @@ import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProviders
 import com.stevegregos.metacognition.R
 
-class HomeFragment : Fragment() {
+class JobAidsFragment : Fragment() {
 
-    private lateinit var homeViewModel: HomeViewModel
+    private lateinit var jobAidsViewModel: JobAidsViewModel
 
     override fun onCreateView(
             inflater: LayoutInflater,
             container: ViewGroup?,
             savedInstanceState: Bundle?
     ): View? {
-        homeViewModel =
-                ViewModelProviders.of(this).get(HomeViewModel::class.java)
-        val root = inflater.inflate(R.layout.fragment_home, container, false)
-        val textView: TextView = root.findViewById(R.id.text_home)
-        homeViewModel.text.observe(viewLifecycleOwner, Observer {
+        jobAidsViewModel =
+                ViewModelProviders.of(this).get(JobAidsViewModel::class.java)
+        val root = inflater.inflate(R.layout.fragment_job_aids, container, false)
+        val textView: TextView = root.findViewById(R.id.text_notifications)
+        jobAidsViewModel.text.observe(viewLifecycleOwner, Observer {
             textView.text = it
         })
         return root
